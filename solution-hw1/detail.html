@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="header">
+            <img src="logo/logo-01.svg" alt="logo"/>
+            <hr></hr>
+        </div>
+
+        <main class="detail">
+            <h3 class="detail-product"> <a href=gallery.html>PRODUCT</a></h3>
+            <h3 class="detail-cart"> <a href=cart.html>CART</a></h3>
+            <div class="item-detail">
+                <p class="product-name">Original cinnamon roll</p>
+                <img src="products/original-cinnamon-roll.jpg" alt="original-cinamon-roll"/>
+                <div class="cart-info-detail">
+                    <p class="product-description-detail">Customize our delicious, hand-made cinammon roll to your liking!</p>
+                    <div class="dropdown-list">
+                        <label for="cart">Glazing:</label>
+                        <select name="cart" class="dropdown-list">
+                            <option value="keep-original">Keep original</option>
+                            <option value="sugar-milk">Sugar milk</option>
+                            <option value="vanilla-milk">Vanilla milk</option>
+                            <option value="Double chocolate">Double chocolate</option>
+                        </select>
+                    </div>
+                    <div class="dropdown-list">
+                        <label for="quantity">Pack size:</label>
+                        <select name="quantity" class="dropdown-list">
+                        <option value="1">1</option>
+                        <option value="3">3</option>
+                        <option value="6">6</option>
+                        <option value="12"></option>
+                    </select>
+
+                    </div>
+                    <div class="selected-detail">
+                        <p class="product-price">$ 2.49</p>
+                        <button class="add-to-cart">
+                            <a href="cart.html">Add to cart</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
