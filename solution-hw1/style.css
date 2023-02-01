@@ -29,33 +29,20 @@ a {
     text-align: center;
 }
 
-.detail-product {
-    background: yellow;
-    width: 30%;
+
+.highlight {
+    background-color: yellow;
     margin-left: auto;
     margin-right: auto;
 }
 
-.gallery-product {
-    background: yellow;
-    width: 30%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.cart-cart {
-    background: yellow;
-    width: 30%;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .item {
     width: 30%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     padding:20px;
     display:block;
     text-align: left;
@@ -170,6 +157,8 @@ select {
 
 .product-price {
     font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .cart-checkout {
