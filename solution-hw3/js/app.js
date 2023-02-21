@@ -28,7 +28,6 @@ for (const [glazing, price] of Object.entries(glazingPrices)) {
 }
 
 function glazingChange(element) {
-    //get value of glazing
     glazingPrice = parseFloat(element.value);
     updatePrice();
 
