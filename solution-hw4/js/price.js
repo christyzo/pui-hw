@@ -23,6 +23,7 @@ for (const [glazing, price] of Object.entries(glazingPrices)) {
 	option.textContent = glazing;
 	option.value = price;
 	glazingSelect.appendChild(option);
+	
 }
 
 /* Populate pack options with corresponding price adaptation values */
@@ -68,7 +69,8 @@ class Roll {
 function addToCart() {
 	const packSelectValue = packSelect.options[packSelect.selectedIndex].text;
 	const glazingSelectValue = glazingSelect.options[glazingSelect.selectedIndex].text;
-    const cartItem = new Roll(rollType + " Cinnamon Roll", glazingSelectValue, packSelectValue, basePrice);
+	const baseGlazingPrice= basePrice + glazingPrices[glazingSelectValue];
+    const cartItem = new Roll(rollType + " Cinnamon Roll", glazingSelectValue, packSelectValue, baseGlazingPrice);
     cart.push(cartItem);
     console.log("Cart:", cart);
 }

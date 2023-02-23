@@ -32,7 +32,6 @@ const rollType = params.get('roll');
 
 function updateInfo(){
     for (let rollTypeItem in rolls){
-        console.log(rollTypeItem, rollType);
         if (rollTypeItem == rollType) {
             const basePriceParsed = rolls[rollTypeItem].basePrice;
             const imageFileParsed = rolls[rollTypeItem].imageFile;
@@ -40,8 +39,7 @@ function updateInfo(){
             banner.innerHTML = rollTypeItem + " " + "Cinnamon Roll";
             const imageFileOriginal = document.querySelector(".product-image");
             imageFileOriginal.src = "products/images/" + imageFileParsed;
-            console.log(imageFileOriginal);
-            // everything above this works
+
             
         }
     }
@@ -53,6 +51,5 @@ function onDocLoad(){
     updateInfo();
 }
 
-// ----delete this if no work
 
 
