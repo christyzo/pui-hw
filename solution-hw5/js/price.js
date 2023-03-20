@@ -114,7 +114,6 @@ function addToCartInitialize(rollSelected, packSelIndex, glazingSelIndex) {
     const cartItem = new Roll(rollSelected + " Cinnamon Roll", glazingSelectValue, packSelectValue, parseFloat(baseGlazingPrice*packSelectValue).toFixed(2));
     cart.push(cartItem);
 
-	
 }
 
 
