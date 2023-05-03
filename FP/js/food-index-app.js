@@ -42,6 +42,7 @@ $(document).ready(function() {
     $.each(value, function(idx, course) {
       var itemImg = $("<img>", {src: course.src});
       var itemName = course.name;
+      itemImg.attr("alt", itemName);
       var item = $("<div>", {class: "grid-item","data-name": itemName, "data-category": index, "data-index": idx}).append(itemImg);
       $(".grid").append(item);
     })
